@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Star Catcher: Misi Galaksi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+    <h1>Star Catcher: Misi Galaksi</h1>
+    <div class="hud">
+      <span>Skor: <b id="score">0</b></span>
+      <span>Waktu: <b id="time">60</b></span>
+      <span>Nyawa: <b id="lives">3</b></span>
+      <button id="restartBtn" type="button">Mulai ulang</button>
+    </div>
+    <div class="stage">
+      <canvas id="game" width="480" height="640" tabindex="0" aria-label="Area permainan Star Catcher"></canvas>
+      <div id="overlay" class="overlay">
+        <h2 id="ovTitle">Siap bermain?</h2>
+        <p id="ovText">Tangkap bintang, hindari meteor. Waktu 60 detik, nyawa 3.</p>
+        <button id="startBtn" type="button">Mulai permainan</button>
+      </div>
+    </div>
+    <div class="pad">
+      <button id="leftBtn" type="button" aria-label="Gerak ke kiri">&#9664;</button>
+      <button id="rightBtn" type="button" aria-label="Gerak ke kanan">&#9654;</button>
+    </div>
+    <p class="hint">Kontrol: panah kiri/kanan, A/D, tombol layar, atau geser jari pada area game.<br>
+      Bintang +1, bintang emas +5, meteor -1 nyawa.</p>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
